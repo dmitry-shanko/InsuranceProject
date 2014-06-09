@@ -1,0 +1,10 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<div class="container">
+	<div align="right">
+		<a href="./language?lang=ru&page=<c:out value="${page}"/>">русский</a>&nbsp;&nbsp;|&nbsp;
+		<a href="language?lang=en&page=<c:out value="${page}"/>">english</a>
+	</div>
+	<br>

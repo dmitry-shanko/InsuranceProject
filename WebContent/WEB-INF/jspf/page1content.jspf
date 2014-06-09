@@ -1,0 +1,124 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<div class="container">
+<form name="autoSumForm" id="osagocalc" action="mainpage" class="form-horizontal">
+<input type="hidden" name="id" value="2">
+
+
+<table cellpadding="10" width="100%" class="table table-striped table-bordered table-hover table-condensed ">
+<tbody >
+	<tr class="info">
+		<th><fmt:message bundle="${loc}" key="page1Userpage" />:</th>
+		<th><fmt:message bundle="${loc}" key="page1Fillall" />:</th>
+	</tr>
+</tbody>
+<tbody >
+<tr ><td class="text-error" ><fmt:message bundle="${loc}" key="page1Cartype" />: </td><td>
+
+ <select name="cartype" id="carlight" class="span5">
+  <option value="0"><fmt:message bundle="${loc}" key="page1Choose" /></option>
+  <option value="1"><fmt:message bundle="${loc}" key="page1Cartype1" /></option>
+  <option value="2"><fmt:message bundle="${loc}" key="page1Cartype2" /></option>
+  <option value="3"><fmt:message bundle="${loc}" key="page1Cartype3" /></option>
+  <option value="4"><fmt:message bundle="${loc}" key="page1Cartype4" /></option>
+  <option value="5"><fmt:message bundle="${loc}" key="page1Cartype5" /></option>
+  <option value="6"><fmt:message bundle="${loc}" key="page1Cartype6" /></option>
+  <option value="7"><fmt:message bundle="${loc}" key="page1Cartype7" /></option>
+</select>
+
+
+
+
+</td></tr>
+<tr class="warning"><td class="text-info"><fmt:message bundle="${loc}" key="page1Carmark" />:</td><td>
+
+
+
+<select name="carcountry" class="span5">
+  <option value="0"><fmt:message bundle="${loc}" key="page1Choose" /></option>
+  <option value="1"><fmt:message bundle="${loc}" key="page1Carmark1" /></option>
+  <option value="2"><fmt:message bundle="${loc}" key="page1Carmark2" /></option>
+</select>
+
+
+
+
+
+</td></tr>
+<tr ><td class="text-error"><fmt:message bundle="${loc}" key="page1Carvalue" />:</td><td>
+
+<select name="carvalue" class="span5">
+  <option value="0"><fmt:message bundle="${loc}" key="page1Choose" /></option>
+  <option value="1"><fmt:message bundle="${loc}" key="page1Carvalue1" /></option>
+  <option value="2"><fmt:message bundle="${loc}" key="page1Carvalue2" /></option>
+  <option value="3"><fmt:message bundle="${loc}" key="page1Carvalue3" /></option>
+  <option value="4"><fmt:message bundle="${loc}" key="page1Carvalue4" /></option>
+  <option value="5"><fmt:message bundle="${loc}" key="page1Carvalue5" /></option>
+</select>
+
+</td></tr>
+<tr class="warning"><td class="text-info"><fmt:message bundle="${loc}" key="page1Term" />:</td><td>
+
+
+<select name="term" class="span5">
+  <option value="0"><fmt:message bundle="${loc}" key="page1Choose" /></option>
+  <option value="1"><fmt:message bundle="${loc}" key="page1Term1" /></option>
+  <option value="2"><fmt:message bundle="${loc}" key="page1Term2" /></option>
+  <option value="3"><fmt:message bundle="${loc}" key="page1Term3" /></option>
+  <option value="4"><fmt:message bundle="${loc}" key="page1Term4" /></option>
+  <option value="5"><fmt:message bundle="${loc}" key="page1Term5" /></option>
+  <option value="6"><fmt:message bundle="${loc}" key="page1Term6" /></option>
+  <option value="7"><fmt:message bundle="${loc}" key="page1Term7" /></option>
+  <option value="8"><fmt:message bundle="${loc}" key="page1Term8" /></option>
+  <option value="9"><fmt:message bundle="${loc}" key="page1Term9" /></option>
+  <option value="10"><fmt:message bundle="${loc}" key="page1Term10" /></option>
+  <option value="11"><fmt:message bundle="${loc}" key="page1Term11" /></option>
+  <option value="12"><fmt:message bundle="${loc}" key="page1Term12" /></option>
+  <option value="13"><fmt:message bundle="${loc}" key="page1Term13" /></option>
+</select>
+
+
+
+</td></tr>
+<tr ><td class="text-error"><fmt:message bundle="${loc}" key="page1Registrationuser" />:</td><td>
+
+
+
+<select name="propiska" class="span5">
+  <option value="0"><fmt:message bundle="${loc}" key="page1Choose" /></option>
+  <option value="1"><fmt:message bundle="${loc}" key="page1Registrationuser1" /></option>
+  <option value="2"><fmt:message bundle="${loc}" key="page1Registrationuser2" /></option>
+  <option value="3"><fmt:message bundle="${loc}" key="page1Registrationuser3" /></option>
+  <option value="4"><fmt:message bundle="${loc}" key="page1Registrationuser4" /></option>
+</select>
+
+
+
+</td></tr>
+<tr class="warning"><td class="text-info"><fmt:message bundle="${loc}" key="page1Age" />: </td><td>
+
+
+
+<select name="driveage" class="span5">
+  <option value="0"><fmt:message bundle="${loc}" key="page1Choose" /></option>
+  <option value="1"><fmt:message bundle="${loc}" key="page1Age1" /></option>
+  <option value="2"><fmt:message bundle="${loc}" key="page1Age2" /></option>
+  <option value="3"><fmt:message bundle="${loc}" key="page1Age3" /></option>
+  <option value="4"><fmt:message bundle="${loc}" key="page1Age4" /></option>
+</select>
+
+
+
+
+</td></tr>
+<tr><td> <button type="submit" class="btn btn-danger span3"><fmt:message bundle="${loc}" key="page1Next" /></button> </td><td align="right"></td></tr>
+</tbody>
+</table>
+</form>
+</div>
